@@ -10,4 +10,5 @@ public class Consts {
 
     public static final String FIREBASE_LOCATION_USERS = "users";
     public static final String ANONYMOUS_PROVIDER = "anonymous";
+    public static final String FIREBASE_LOCATION_GROWTH_MONTHS = "growthMonths";
 }

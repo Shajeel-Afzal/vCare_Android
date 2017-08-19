@@ -3,6 +3,7 @@
     package="com.ammi.ammicare">
 
     <application
+        android:name=".GlobalApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -16,10 +17,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".AppLoginActivity"
+            android:label="@string/login"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".GrowthMonthsActivity"
+            android:label="@string/growth_month" />
     </application>
 
 </manifest>

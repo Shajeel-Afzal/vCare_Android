@@ -8,4 +8,6 @@
     <string name="setting_up_account">Setting up account.</string>
     <string name="setting_up_anonymous_account">Setting up anonymous account!</string>
     <string name="authentication_failed_please_try_later">Authentication failed please try again!</string>
+    <string name="growth_month">Growth Months</string>
+    <string name="login">Login</string>
 </resources>
