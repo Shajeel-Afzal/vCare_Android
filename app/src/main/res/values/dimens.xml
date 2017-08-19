@@ -1,0 +1,10 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin_fixed">16dp</dimen>
+    <dimen name="social_network_author_image_size">40dp</dimen>
+    <dimen name="social_card_elevation">2dp</dimen>
+    <dimen name="social_network_post_comments_author_image_size">32dp</dimen>
+</resources>

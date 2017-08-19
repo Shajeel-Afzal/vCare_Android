@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Ammi Care</string>
+    <string name="sign_in_cancelled">Sign In Cancelled</string>
+    <string name="no_internet_connection">No Internet Connection!</string>
+    <string name="unknown_error">Unknown Error</string>
+    <string name="unknown_sign_in_response">Unknow Signin Response</string>
+    <string name="please_wait">Please Wait!</string>
+    <string name="setting_up_account">Setting up account.</string>
+    <string name="setting_up_anonymous_account">Setting up anonymous account!</string>
+    <string name="authentication_failed_please_try_later">Authentication failed please try again!</string>
+</resources>
