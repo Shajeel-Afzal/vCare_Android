@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.ammi.ammicare.utils.DialogUtils;
 
@@ -20,8 +21,6 @@ public class MainActivity extends AppBaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        GrowthMonthsActivity.start(this);
     }
 
     @Override
@@ -41,5 +40,9 @@ public class MainActivity extends AppBaseActivity {
             }, null, "Logout", "Cancel");
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    public void onGrowthRateClick(View view) {
+        GrowthMonthsActivity.start(this);
     }
 }
