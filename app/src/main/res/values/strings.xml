@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Ammi Care</string>
+    <string name="app_name">vCare</string>
     <string name="sign_in_cancelled">Sign In Cancelled</string>
     <string name="no_internet_connection">No Internet Connection!</string>
     <string name="unknown_error">Unknown Error</string>
