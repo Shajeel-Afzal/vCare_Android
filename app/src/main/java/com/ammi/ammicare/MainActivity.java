@@ -8,7 +8,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.ammi.ammicare.utils.Consts;
 import com.ammi.ammicare.utils.DialogUtils;
+import com.ammi.ammicare.utils.PrefUtils;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppBaseActivity {
 
@@ -21,6 +24,14 @@ public class MainActivity extends AppBaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        AgeInputActivity.start(this);
+
+        boolean isFirstRun = PrefUtils.getBoolean(this, Consts.KEY_IS_FIRST_RUN, true);
+        if (isFirstRun && FirebaseAuth.getInstance().getCurrentUser() != null) {
+            AgeInputActivity.start(this);
+            PrefUtils.saveBoolean(this, Consts.KEY_IS_FIRST_RUN, false);
+        }
     }
 
     @Override

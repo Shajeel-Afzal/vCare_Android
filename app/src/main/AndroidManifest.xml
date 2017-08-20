@@ -24,7 +24,8 @@
         <activity
             android:name=".GrowthMonthsActivity"
             android:label="@string/growth_month" />
-        <activity android:name=".GrowthMonthDetailActivity"></activity>
+        <activity android:name=".GrowthMonthDetailActivity" />
+        <activity android:name=".AgeInputActivity"></activity>
     </application>
 
 </manifest>

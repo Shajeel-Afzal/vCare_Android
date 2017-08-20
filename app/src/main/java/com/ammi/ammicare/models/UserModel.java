@@ -16,10 +16,11 @@ public class UserModel {
     private String isVerified;
     private String locale;
     private String provider;
+    private String childDateOfBirth;
     private HashMap<String, Object> timestampLastSeen;
     private HashMap<String, Object> timestampJoined;
 
-    public UserModel(String name, String email, String profileImageLink, String firstName, String lastName, String gender, String link, String id, String locale, HashMap<String, Object> timestampLastSeen, HashMap<String, Object> timestampJoined) {
+    public UserModel(String name, String email, String profileImageLink, String firstName, String lastName, String gender, String link, String id, String uid, String isVerified, String locale, String provider, String childDateOfBirth, HashMap<String, Object> timestampLastSeen, HashMap<String, Object> timestampJoined) {
         this.name = name;
         this.email = email;
         this.profileImageLink = profileImageLink;
@@ -28,9 +29,21 @@ public class UserModel {
         this.gender = gender;
         this.link = link;
         this.id = id;
+        this.uid = uid;
+        this.isVerified = isVerified;
         this.locale = locale;
+        this.provider = provider;
+        this.childDateOfBirth = childDateOfBirth;
         this.timestampLastSeen = timestampLastSeen;
         this.timestampJoined = timestampJoined;
+    }
+
+    public String getChildDateOfBirth() {
+        return childDateOfBirth;
+    }
+
+    public void setChildDateOfBirth(String childDateOfBirth) {
+        this.childDateOfBirth = childDateOfBirth;
     }
 
     public String getProvider() {
